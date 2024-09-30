@@ -1,91 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Meu portfólio</title>
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header class="container text-center">
-        <img src="img/avatar-perfil.png" alt="avatar da Fernanda" class="rounded-circle" width="150" height="150"
-            srcset="">
-        <p class="lead">Eu sou Maria JUlia_</p>
-        <h1>Eu estudo Programação</h1>
-        <p>Sou estudante de Computação. Sou etudante do Ensino Médio estudo Programação. Aprendo a desenvolver e programar sites usando HTML, CSS. Veja os projetos
-            que já desenvolvi!</p>
-        <p>Minhas habilidades</p>
-        <div>
-            <p class="badge bg-secondary">HTML</p>
-            <p class="badge bg-secondary">CSS</p>
-            <p class="badge bg-secondary">GitHub</p>
-            <p class="badge bg-secondary">Scratch</p>
-        </div>
+    <header>
+        <h1>Meu Portfólio</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    <main class="container mt-5">
-        <h2>Meus projetos</h2>
-        <div class="row">
-            <!-- Projeto 1 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="img/Captura de tela_2024-09-23_08-27-02.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
-                    <div class="card-body">
-                        <h5 class="card-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
-                        <p class="card-text">Este projeto é uma página web que apresenta uma lista dos meus livros
-                            favoritos, incluindo informações sobre a autora, datas de publicação e links para compra
-                            na Amazon. A página é estilizada com CSS para uma visualização agradável e usa fontes
-                            externas do Google Fonts.
-                        </p>
-                        <button type="button" class="btn btn-link">Veja o projeto</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Projeto 2 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="img/projeto-2.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
-                    <div class="card-body">
-                        <h5 class="card-title">Decidindo o Futuro: Uma Jornada Interativa sobre a Inteligência
-                            Artificial</h5>
-                        <p class="card-text">Este projeto é um jogo interativo baseado em navegador que explora o
-                            impacto e as implicações da Inteligência Artificial (IA) na sociedade, permitindo que as
-                            pessoas jogadoras façam escolhas que influenciam o desenrolar de uma narrativa sobre o
-                            futuro da IA.</p>
-                        <button type="button" class="btn btn-link">Veja o projeto</button>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Projeto 3 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="img/projeto-3.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
-                    <div class="card-body">
-                        <h5 class="card-title">Explorando o Universo: Uma Aventura Interativa em Astronomia com Scratch
-                        </h5>
-                        <p class="card-text">EEste projeto Scratch cria uma experiência interativa educativa sobre
-                            astronomia, permitindo aos usuários explorar informações sobre constelações, eclipses, e a
-                            forma da Terra através de cenários dinâmicos e diálogos informativos.
-                        </p>
-                        <button type="button" class="btn btn-link">Veja o projeto</button>
-                    </div>
-                </div>
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Eu me chamo Maria Julia, Sou estudante de Computação. Sou etudante do Ensino Médio estudo Programação. Aprendo a desenvolver e programar sites usando HTML, CSS. Veja os projetos
+            que já desenvolvi!.</p>
+    </section>
+
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projetos-container">
+            <div class="projeto">
+                <img src="img/Captura de tela_2024-09-23_08-27-02.png" alt="projeto 1">
+                <h3>Projeto 1</h3>
+                <p>Este projeto é uma página web que apresenta uma lista dos meus livros
+                    favoritos, incluindo informações sobre a autora, datas de publicação e links para acesso. A página é estilizada com CSS para uma visualização agradável.</p>
+                <a href="#">Ver mais</a>
+            </div>
+            <div class="projeto">
+                <img src="img/Screenshot 2024-09-30 at 08-08-4.png" alt="projeto 1">
+                <h3>Projeto 2</h3>
+                <p>Este projeto é uma página web que te oferece alguns combos para a criação do seu patinho do seu jeito, variando o preço.</p>
+                <a href="#">Ver mais</a>
+            </div>
+            <div class="projeto">
+                <img src="img/Screenshot 2024-09-30 at 08-22-3.png" alt="projeto 1">
+                <h3>Projeto 3</h3>
+                <p>Este projeto é uma página web que explora oportunidades e melhorias do campo a cidade, onde fala sobre as vantagens e desvantagens de sair do campo para a cidade. fala também sobre Agronegócio, Integração Social, Serviços, Educação, etc.</p>
+                <a href="#">Ver mais</a>
+            </div>
+            <div class="projeto">
+                <img src="img/Screenshot 2024-09-30 at 08-33-0.png" alt="projeto 1">
+                <h3>Projeto 4</h3>
+                <p>Descrição do Projeto 4. Um sistema de gerenciamento de tarefas com back-end em Node.js.</p>
+                <a href="#">Ver mais</a>
             </div>
         </div>
-    </main>
+    </section>
 
-    <footer class="container py-5">
-        <h2>Entre em contato</h2>
-        <div>
-            <a href="https://github.com/femascheti">GitHub</a>
-        </div>
-        <p class="my-5 text-center">© Copyright 2024. Produzido por Fernanda Mascheti</p>
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
